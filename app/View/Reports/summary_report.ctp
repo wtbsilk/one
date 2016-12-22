@@ -23,7 +23,11 @@
                     </div>                    <div class="col-sm-3 col-xs-6">
                         <label for="un_member">Person:</label>
                         <?php echo $this->Form->input('user_id', array('options' => $persons, 'empty' => $Select)); ?>
-                    </div>                 
+                    </div>
+                    </div>                    <div class="col-sm-3 col-xs-6">
+                        <label for="un_member"Country:</label>
+                        <?php echo $this->Form->input('country_id', array('options' => $countries, 'empty' => $Choose)); ?>
+                    </div>                    
                     <div class="col-sm-3 col-xs-6">
                         <label for="un_member">Supplier:</label>
                         <?php echo $this->Form->input('supplier_id', array('options' => $TravelSuppliers, 'empty' => '--Select--', 'data-required' => 'true')); ?>
