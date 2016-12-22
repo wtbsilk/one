@@ -16,7 +16,7 @@
             <div class="panel_controls hideform">
                  
           
-                <div class="row" id="search_panel_controls">
+                <div class="row">
                     <div class="col-sm-3 col-xs-6">
                         <label for="un_member">Summary Type:</label>
                         <?php echo $this->Form->input('summary_type', array('options' => $summary, 'empty' => '--Select--', 'data-required' => 'true','disabled' => '2')); ?>
