@@ -293,4 +293,21 @@ $this->Js->get('#ReportSummaryType')->event('change', $this->Js->request(array(
             ))
         ))
 );
+
+$this->Js->get('#ReportUserId')->event('change', $this->Js->request(array(
+            'controller' => 'all_functions',
+            'action' => 'get_country_list_by_summary_type_and_user'
+                ), array(
+            'update' => '#ReportCountryId',
+            'async' => true,
+            'before' => 'loading("ReportCountryId")',
+            'complete' => 'loaded("ReportCountryId")',
+            'method' => 'post',
+            'dataExpression' => true,
+            'data' => $this->Js->serializeForm(array(
+                'isForm' => true,
+                'inline' => true
+            ))
+        ))
+);
 ?>
