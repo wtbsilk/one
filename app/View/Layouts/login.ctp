@@ -7,7 +7,7 @@
 	</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php
-		echo $this->Html->meta('favicon.ico','http://www.silkrouters.com/demo/app/webroot/img/favicon.ico',array('type' => 'icon'));
+		echo $this->Html->meta('favicon.ico','http://www.silkrouters.com/app/webroot/img/favicon.ico',array('type' => 'icon'));
 
 		//echo $this->Html->css('cake.generic');
 		echo $this->Html->css(array('login'));
