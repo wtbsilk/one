@@ -9,7 +9,7 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="table-heading">
-            <h4 class="table-heading-title"> My Summary</h4>
+            <h4 class="table-heading-title"> My Summary</h4> 
             
         </div>
         <div class="panel panel-default">
