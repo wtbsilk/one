@@ -196,7 +196,7 @@ endif; ?>
 <table class="table toggle-square" style="margin-top:-16px !important">
 <tbody>
 <tr>
-                                <td  width="59.29%">Total</td>
+                                <td  width="39.29%">Total</td>
                                 <td width="7%"><?php echo $sum2?></td>
                                 <td width="7%"><?php echo $sum?></td> 
                                 <td width="7%"><?php echo $sum1?></td>
