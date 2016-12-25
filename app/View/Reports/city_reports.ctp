@@ -136,6 +136,7 @@ echo $this->Form->end();
                     $sum3 = 0;
                     $sum4 = 0;
                     $sum5 = 0;
+                    $blankcity_id = 0;
                     if (isset($TravelCities) && count($TravelCities) > 0):
                         foreach ($TravelCities as $value):                       
                          $CityStatus = $value['TravelCity']['city_status'] ? 'OK' : 'ERROR';
@@ -230,7 +231,16 @@ endif; ?>
 									$this->Html->link($area_count, array('controller' => 'reports', 'action' => 'area_list/city_id:0/country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								
 								?></td>
-                                <td  width="20%">&nbsp;</td>
+                                <td>
+                                    <?php
+                                    
+                                   echo $this->Html->link('<span class="icon-pencil"></span>', array('controller' => 'reports', 'action' => 'city_edit/' . $blankcity_id), array('class' => 'act-ico', 'escape' => false));
+                                   echo $this->Html->link('<span class="icon-remove"></span>', array('controller' => 'reports', 'action' => 'delete', $blankcity_id), array('class' => 'act-ico', 'escape' => false), "Are you sure you wish to delete this city?");
+                                   echo $this->Html->link('Hotel Count','/reports/mismatch_hotel_count/'.$country_id.'/'.$blankcity_id, array('class' => 'act-ico open-popup-link add-btn','escape' => false,'data-placement' => "left", 'title' => "Hotel Count",'data-toggle' => "tooltip"));
+                                   echo $this->Html->link('Mass Update', '/mass_operations/hotel/city_id:'.$blankcity_id.'/country_id:'.$country_id,array('class' => 'act-ico', 'escape' => false,'target' => '_blank'))
+?>
+                                    
+                                </td>
                             </tr>
 <?php
 if (isset($miss_match) && count($miss_match) > 0):
