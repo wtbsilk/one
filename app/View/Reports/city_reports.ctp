@@ -196,7 +196,7 @@ endif; ?>
 <table class="table toggle-square" style="margin-top:-16px !important">
 <tbody>
 <tr>
-                                <td  width="39.29%">Total</td>
+                                <td  width="33.29%">Total</td>
                                 <td width="7%"><?php echo $sum2?></td>
                                 <td width="7%"><?php echo $sum?></td> 
                                 <td width="7%"><?php echo $sum1?></td>
@@ -206,7 +206,7 @@ endif; ?>
                                 <td  width="7%">&nbsp;</td>
                             </tr>
 <tr>
-                                <td  width="39.29%">Blank City</td>
+                                <td  width="33.29%">Blank City</td>
                                 
                                 <td width="7%"><?php 
 								
@@ -241,7 +241,7 @@ endforeach;
 endif;
 ?>
                             <tr>
-                                <td  width="39.29%">Mismatch Counts</td>
+                                <td  width="33.29%">Mismatch Counts</td>
                                 
                                 <td width="7%">&nbsp;</td>
                                 <td width="7%"><?php 
@@ -253,7 +253,7 @@ endif;
                                 <td  width="7%">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td  width="39.29%">All Counts</td>
+                                <td  width="33.29%">All Counts</td>
                                 
                                 <td width="7%"><?php echo $sum2 + $city_mapping_count;?></td>
                                 <td width="7%"><?php echo $sum + $sum5 + $hotel_count;?></td> 
