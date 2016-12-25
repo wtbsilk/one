@@ -253,7 +253,7 @@ endif;
                                 <td  width="7%">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td  width="54%">All Counts</td>
+                                <td  width="39.29%">All Counts</td>
                                 
                                 <td width="7%"><?php echo $sum2 + $city_mapping_count;?></td>
                                 <td width="7%"><?php echo $sum + $sum5 + $hotel_count;?></td> 
