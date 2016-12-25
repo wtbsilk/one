@@ -206,7 +206,7 @@ endif; ?>
                                 <td  width="7%">&nbsp;</td>
                             </tr>
 <tr>
-                                <td  width="54%">Blank City</td>
+                                <td  width="39.29%">Blank City</td>
                                 
                                 <td width="7%"><?php 
 								
@@ -241,7 +241,7 @@ endforeach;
 endif;
 ?>
                             <tr>
-                                <td  width="54%">Mismatch Counts</td>
+                                <td  width="39.29%">Mismatch Counts</td>
                                 
                                 <td width="7%">&nbsp;</td>
                                 <td width="7%"><?php 
