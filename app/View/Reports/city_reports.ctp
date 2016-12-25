@@ -197,37 +197,37 @@ endif; ?>
 <table class="table toggle-square" style="margin-top:-16px !important">
 <tbody>
 <tr>
-                                <td  width="49%">Total</td>
-                                <td width="7%"><?php echo $sum2?></td>
-                                <td width="6%"><?php echo $sum?></td> 
-                                <td width="6%"><?php echo $sum1?></td>
+                                <td  width="39%">Total</td>
+                                <td width="8%"><?php echo $sum2?></td>
+                                <td width="7%"><?php echo $sum?></td> 
+                                <td width="7%"><?php echo $sum1?></td>
                                 
-                                <td width="6%"><?php echo $sum3?></td>
-                                <td  width="6%"><?php echo $sum4;?></td>
-                                <td  width="20%">&nbsp;</td>
+                                <td width="7%"><?php echo $sum3?></td>
+                                <td  width="7%"><?php echo $sum4;?></td>
+                                <td  width="25%">&nbsp;</td>
                             </tr>
 <tr>
-                                <td  width="49%">Blank City</td>
+                                <td  width="39%">Blank City</td>
                                 
-                                <td width="7%"><?php 
+                                <td width="8%"><?php 
 								
 								echo ($city_mapping_count) ? $this->Html->link($city_mapping_count, array('controller' => 'reports', 'action' => 'city_mapping_list/city_id:0/city_country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								
 								//echo $city_mapping_count?></td>
-                                <td width="6%"><?php 
+                                <td width="7%"><?php 
 								
 								echo ($hotel_count) ? $this->Html->link($hotel_count, array('controller' => 'reports', 'action' => 'hotel_summary/city_id:0/country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								//echo $hotel_count?></td> 
-                                <td width="6%"><?php echo ($hotel_mapping_count) ? 
+                                <td width="7%"><?php echo ($hotel_mapping_count) ? 
 								$this->Html->link($hotel_mapping_count, array('controller' => 'reports', 'action' => 'hotel_mapping_list/hotel_city_id:0/hotel_country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								
 								?></td>                                
-                                <td width="6%"><?php echo ($suburb_count) ? 
+                                <td width="7%"><?php echo ($suburb_count) ? 
 								$this->Html->link($suburb_count, array('controller' => 'reports', 'action' => 'suburb_list/city_id:0/country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								
 								
 								?></td>
-                                <td  width="6%"><?php echo ($area_count) ?
+                                <td  width="7%"><?php echo ($area_count) ?
 									$this->Html->link($area_count, array('controller' => 'reports', 'action' => 'area_list/city_id:0/country_id:'.$country_id), array('class' => 'act-ico', 'escape' => false,'target' => '_blank')) : '0';
 								
 								?></td>
@@ -251,26 +251,26 @@ endforeach;
 endif;
 ?>
                             <tr>
-                                <td  width="49%">Mismatch Counts</td>
+                                <td  width="39%">Mismatch Counts</td>
                                 
-                                <td width="7%">&nbsp;</td>
-                                <td width="6%"><?php 
+                                <td width="8%">&nbsp;</td>
+                                <td width="7%"><?php 
                                     echo $this->Html->link($sum5, array('controller' => 'reports', 'action' => 'mismatch_hotel'), array('class' => 'act-ico', 'escape' => false,'target' => '_blank'));
 ?></td> 
-                                <td width="6%">&nbsp;</td>                                
-                                <td width="6%">&nbsp;</td>
-                                <td  width="6%">&nbsp;</td>
-                                <td  width="20%">&nbsp;</td>
+                                <td width="7%">&nbsp;</td>                                
+                                <td width="7%">&nbsp;</td>
+                                <td  width="7%">&nbsp;</td>
+                                <td  width="25%">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td  width="49%">All Counts</td>
+                                <td  width="39%">All Counts</td>
                                 
-                                <td width="7%"><?php echo $sum2 + $city_mapping_count;?></td>
-                                <td width="6%"><?php echo $sum + $sum5 + $hotel_count;?></td> 
-                                <td width="6%"><?php echo $sum1 + $hotel_mapping_count;?></td>                                
-                                <td width="6%"><?php echo $sum3 + $suburb_count;?></td>
-                                <td  width="6%"><?php echo $sum4 + $area_count;?></td>
-                                <td  width="20%">&nbsp;</td>
+                                <td width="8%"><?php echo $sum2 + $city_mapping_count;?></td>
+                                <td width="7%"><?php echo $sum + $sum5 + $hotel_count;?></td> 
+                                <td width="7%"><?php echo $sum1 + $hotel_mapping_count;?></td>                                
+                                <td width="7%"><?php echo $sum3 + $suburb_count;?></td>
+                                <td  width="7%"><?php echo $sum4 + $area_count;?></td>
+                                <td  width="25%">&nbsp;</td>
                             </tr>
 
 </tbody>
