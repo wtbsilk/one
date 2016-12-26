@@ -20,10 +20,15 @@
                     <div class="col-sm-3 col-xs-6">
                         <label for="un_member">Summary Type:</label>
                         <?php echo $this->Form->input('summary_type', array('options' => $summary, 'empty' => '--Select--', 'data-required' => 'true','disabled' => '2')); ?>
-                    </div>                    <div class="col-sm-3 col-xs-6">
+                    </div>                    
+					<div class="col-sm-3 col-xs-6">
                         <label for="un_member">Person:</label>
                         <?php echo $this->Form->input('user_id', array('options' => $persons, 'empty' => $Select)); ?>
-                    </div>                 
+                    </div>
+					<div class="col-sm-3 col-xs-6">
+                        <label for="un_member">Country:</label>
+                        <?php echo $this->Form->input('country_id'); ?>
+                    </div> 					
                     <div class="col-sm-3 col-xs-6">
                         <label for="un_member">Supplier:</label>
                         <?php echo $this->Form->input('supplier_id', array('options' => $TravelSuppliers, 'empty' => '--Select--', 'data-required' => 'true')); ?>
@@ -290,6 +295,7 @@ $this->Js->get('#ReportSummaryType')->event('change', $this->Js->request(array(
         ))
 );
 
+/*
 $this->Js->get('#ReportUserId')->event('change', $this->Js->request(array(
             'controller' => 'all_functions',
             'action' => 'get_country_list_by_summary_type_and_user'
@@ -305,5 +311,30 @@ $this->Js->get('#ReportUserId')->event('change', $this->Js->request(array(
                 'inline' => true
             ))
         ))
-);
+);*/
 ?>
+
+<script>
+
+$("#ReportUserId").bind("change", function (event) {
+	
+	$.ajax({
+		async:true,
+		beforeSend:function (XMLHttpRequest) {
+			loading("ReportCountryId")
+			}, 
+		complete:function (XMLHttpRequest, textStatus) {
+			loaded("ReportCountryId")
+			}, 
+		data:$("#parsley_reg").serialize(),
+		dataType:"html", 
+		success:function (data, textStatus) {
+			$("#ReportCountryId").html(data);
+			}, 
+		type:"post", 
+		url:"<?php echo $this->webroot ?>all_functions/get_country_list_by_summary_type_and_user"
+		});
+return false;
+});
+
+</script>
