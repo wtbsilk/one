@@ -109,7 +109,7 @@ $this->Html->addCrumb('My Hotel Images', 'javascript:void(0);', array('class' =>
                                 <td valign="middle" align="center">
 
                                     <?php
-                                    echo $this->Html->link('<span class="icon-pencil"></span>', 'http://imageius.com/edit.php?hotel_id=' . $id . '&ses_id=' . $user_id, array('class' => 'act-ico','target' => '_blank', 'escape' => false));
+                                    echo $this->Html->link('<span class="icon-pencil"></span>', 'http://imageius.com/silkimage.php?hotel_id=' . $id . '&ses_id=' . $user_id, array('class' => 'act-ico','target' => '_blank', 'escape' => false));
                                    
                                     
                                     //echo $this->Html->link('<span class="icon-pencil"></span>', array('controller' => 'travel_hotel_lookups', 'action' => 'hotel_edit/' . $id,), array('class' => 'act-ico', 'escape' => false));
