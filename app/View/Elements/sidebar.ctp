@@ -263,6 +263,26 @@ $cur_page = end($arr); // live
             </li>            
             <?php
  }
+  elseif ($this->Session->read('role_id') == '69') {
+     ?>
+            <li <?php if ($cur_page == 'to-come') { ?> class="active"<?php } ?>>  
+                <?php
+                echo $this->Html->link('<i class="icon-tasks"></i><span>Reports</span>', '/admin/reports', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Managament Reports', 'escape' => false));
+                ?>           
+            </li>
+            <li <?php if ($cur_page == 'to-come') { ?> class="active"<?php } ?>>  
+                <?php
+                echo $this->Html->link('<i class="icon-tasks"></i><span>Operation</span>', '/mass_operations', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Administration', 'escape' => false));
+                ?>           
+            </li>            
+            <li <?php if ($cur_page == 'download_tables/download_ota/') { ?> class="active"<?php } ?>>  
+                <?php
+                echo $this->Html->link('<i class="icon-tasks"></i><span>Data</span>', '/admin/data', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Download Section', 'escape' => false));
+                ?>           
+            </li>
+         
+            <?php
+ }
   elseif ($this->Session->read('role_id') == '67') {
      ?>
             <li <?php if ($cur_page == 'to-come') { ?> class="active"<?php } ?>>  
