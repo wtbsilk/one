@@ -240,25 +240,11 @@ if ($this->Session->read('role_id') == '64') {
             </div>
             <div class="info-details">
                 <?php
-                echo $this->Html->link('<h4>Hotel<span class="pull-right"></span></h4>', '/my-hotels', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Hotel', 'escape' => false));
-                ?>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 active">
-        <div class="info-box  bg-info  text-white" id="initial-tour">
-            <div class="info-icon bg-info-dark">
-                <span aria-hidden="true" class="icon icon-layers"></span>
-            </div>
-            <div class="info-details">
-                <?php
                 echo $this->Html->link('<h4>Suburb<span class="pull-right"></span></h4>', '/my-travel-suburbs', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Suburb', 'escape' => false));
                 ?>
             </div>
         </div>
     </div>
-</div>
-<div class="row">
     <div class="col-md-4 active">
         <div class="info-box  bg-info  text-white" id="initial-tour">
             <div class="info-icon bg-info-dark">
@@ -267,30 +253,6 @@ if ($this->Session->read('role_id') == '64') {
             <div class="info-details">
                 <?php
                 echo $this->Html->link('<h4>Area<span class="pull-right"></span></h4>', '/my-travel-areas', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Area', 'escape' => false));
-                ?>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 active">
-        <div class="info-box  bg-info  text-white" id="initial-tour">
-            <div class="info-icon bg-info-dark">
-                <span aria-hidden="true" class="icon icon-layers"></span>
-            </div>
-            <div class="info-details">
-                <?php
-                echo $this->Html->link('<h4>Chain<span class="pull-right"></span></h4>', '/my-travel-chains', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Chain', 'escape' => false));
-                ?>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 active">
-        <div class="info-box  bg-info  text-white" id="initial-tour">
-            <div class="info-icon bg-info-dark">
-                <span aria-hidden="true" class="icon icon-layers"></span>
-            </div>
-            <div class="info-details">
-                <?php
-                echo $this->Html->link('<h4>Brand<span class="pull-right"></span></h4>', '/my-travel-brands', array('data-toggle' => 'tooltip', 'data-placement' => 'right', 'title' => 'Brand', 'escape' => false));
                 ?>
             </div>
         </div>
