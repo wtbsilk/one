@@ -1,5 +1,5 @@
 <?php
-if ($this->Session->read('role_id') == '69') {
+if ($this->Session->read('role_id') == '64') {
 ?>
 <div class="row">
     <div class="col-md-4 active">
